@@ -7,6 +7,12 @@ import edu.uniandes.ecos.program.ProgramResult;
 
 public class ProgramSizeCalculator {
 	
+	/**
+	 * calcula el tamnaño total del programa
+	 * 
+	 * @param parts
+	 * @return
+	 */
 	public ProgramResult calculateProgramSize(List<Part> parts){
 		int totalSize = 0;
 		for(Part p : parts){
@@ -15,6 +21,14 @@ public class ProgramSizeCalculator {
 		return new ProgramResult(parts, totalSize);
 	}
 	
+	/**
+	 * calcula el tamaño de una clase
+	 * 
+	 * @param code
+	 * @param name
+	 * @param methods
+	 * @return
+	 */
 	public Part calculatePartSize(String code,String name,int methods){
 		
 		code = code.replaceAll("(/\\*([^*]|[\\r\\n]|(\\*+([^*/]|[\\r\\n])))*\\*+/)|(//.*)", "");
@@ -30,6 +44,12 @@ public class ProgramSizeCalculator {
 		
 	}
 	
+	/**
+	 * valida si la linea tiene formato de metodo
+	 * 
+	 * @param line
+	 * @return
+	 */
 	public boolean isMethod(String line){
 		return line.matches("\\s+(public|protected|private|static|\\s) +[\\w\\<\\>\\[\\]]+\\s+(\\w+) *\\([^\\)]*\\) *(\\{?|[^;])");
 	}

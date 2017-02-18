@@ -5,10 +5,18 @@ import java.awt.event.WindowEvent;
 
 import javax.swing.JFrame;
 
+/**
+ * @author AndrésGarcía
+ *
+ */
 public class UserInterface {
 	
 	
 	
+	/**
+	 * entrada princiapl
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 	    JFrame frame = new JFrame("");

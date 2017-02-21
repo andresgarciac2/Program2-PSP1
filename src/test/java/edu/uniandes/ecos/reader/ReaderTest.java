@@ -11,7 +11,7 @@ import edu.uniandes.ecos.program.Part;
 public class ReaderTest {
 
 	Reader reader = new Reader();
-	
+	/*
 	   @Test
 	   public void program1SizeTest() {	 
 		   reader.listFilesForFolder(new File("C:\\AndresG\\ECOS\\workspace CAISW\\Program 1\\src\\main\\java"));
@@ -44,6 +44,6 @@ public class ReaderTest {
 			   methods += pr.getMethods();
 		   }
 		   assertTrue(methods == 21);
-	   }
+	   }*/
 	   
 }

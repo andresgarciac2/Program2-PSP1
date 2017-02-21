@@ -26,7 +26,7 @@ public class Applet extends JPanel
    Reader reader = new Reader();
    JFileChooser chooser;
    String choosertitle;
-   
+   //jfvjfjf;
   public Applet() {
     go = new JButton("Buscar folder");
     go.setSize(100,100);
